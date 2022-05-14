@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import UseRefExample1 from "./components/UseRefExample1";
+import UseRefExample2 from "./components/UseRefExample2";
+import UseRefExample3 from "./components/UseRefExample3";
+import UseMemoExample from "./components/UseMemoExample";
+import UseCallbackExample from "./components/UseCallbackExample";
+import CustomHookExample1 from "./components/CustomHookExample1";
+import CustomHookExample2 from "./components/CustomHookExample2";
+import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mt-5 mb-5">
+      <h1 className='text-center'>React Sandbox</h1>
+      <UseRefExample1 />
+      <br/><hr/>
+      <UseRefExample2 />
+      <br/><hr/>
+      <UseRefExample3 />
+      <br/><hr/>
+      <UseMemoExample />
+      <br/><hr/>
+      <UseCallbackExample />
+      <br/><hr/>
+      <CustomHookExample1 />
+      <br/><hr/>
+      <CustomHookExample2 />
     </div>
   );
 }
