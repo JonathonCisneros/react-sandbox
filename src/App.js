@@ -5,7 +5,6 @@ import UseMemoExample from "./components/UseMemoExample";
 import UseCallbackExample from "./components/UseCallbackExample";
 import CustomHookExample1 from "./components/CustomHookExample1";
 import CustomHookExample2 from "./components/CustomHookExample2";
-import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (

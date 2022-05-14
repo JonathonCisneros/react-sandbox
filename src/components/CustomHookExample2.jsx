@@ -1,3 +1,5 @@
+/*** Stores inputs in an array in local storage and displays it ***/
+
 import useLocalStorage from '../hooks/useLocalStorage';
 import { useState } from 'react';
 

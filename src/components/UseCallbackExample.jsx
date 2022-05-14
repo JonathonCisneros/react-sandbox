@@ -1,3 +1,5 @@
+/*** useCallback hook used to enhance performance, only if necessary ***/
+
 import React, { useCallback, useState } from 'react';
 
 function UseCallbackExample ( ) {

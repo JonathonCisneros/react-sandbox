@@ -1,3 +1,5 @@
+/*** Custom hook, useFetch, fetches data from a url ***/
+
 import useFetch from '../hooks/useFetch';
 import { useState, useRef } from 'react';
 
@@ -17,7 +19,7 @@ function CustomHookExample1 ( ) {
   return (
     <div>
       <h1>Custom Hook  - <i>useFetch()</i></h1>
-      <h3 className='text-secondary'>We created a <i>useFetch()</i> hook in a separate .js file and called it in this component. This hook fetches data from a url and displays it in this component. Here, we called post titles from <a href="https://jsonplaceholder.typicode.com/posts" target='_blank'>jsonplaceholder.typicode.com/posts</a>.</h3><br/>
+      <h3 className='text-secondary'>We created a <i>useFetch()</i> hook in a separate .js file and called it in this component. This hook fetches data from a url and displays it in this component. Here, we called post titles from <a href="https://jsonplaceholder.typicode.com/posts" target='_blank' rel="noreferrer">jsonplaceholder.typicode.com/posts</a>.</h3><br/>
       <button
         onClick={ ( ) => {
           showList ? setShowList( false ) : setShowList( true );

@@ -1,3 +1,6 @@
+/*** useMemo prevents the expensive function from being ***/
+/*** called again if number has not changed in input            ***/
+
 import { useMemo, useRef, useState, useEffect } from 'react';
 
 function UseMemoExample ( ) {
@@ -11,7 +14,7 @@ function UseMemoExample ( ) {
 
   useEffect( ( ) => {
     renders.current += 1
-  });
+  } );
 
 
   // Function when button is clicked
