@@ -1,33 +1,34 @@
 /*** To-Do list from jsonplaceholder displays title of 1st to-do item ***/
+/*** For useRef Example 3 ***/
 
 import { useState, useRef, useEffect } from 'react';
 
-function ToDo ( ) {
-  const [ loading, setLoading ] = useState( true );
-  const [ toDo, setToDo ] = useState( { } );
+function ToDo() {
+  const [loading, setLoading] = useState(true);
+  const [toDo, setToDo] = useState({});
 
   // use "useRef" to reference the component
-  const isMounted = useRef( true );
+  const isMounted = useRef(true);
 
-  useEffect( ( ) => {
+  useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(( res ) => res.json( ) )
-      .then(( data ) => {
-        setTimeout( ( ) => {
-          if ( isMounted.current ) {
-            setToDo( data )
-            setLoading( false )
+      .then((res) => res.json())
+      .then((data) => {
+        setTimeout(() => {
+          if (isMounted.current) {
+            setToDo(data);
+            setLoading(false);
           }
-        }, 3000 )
-      })
+        }, 3000);
+      });
 
     // runs when component is unmounted, fixes memory leak, but no memory leak in React 18?
-    return ( ) => {
+    return () => {
       isMounted.current = false;
-    }
-  }, [ isMounted ] );
+    };
+  }, [isMounted]);
 
-  return loading ? <h3>Loading...</h3> : <h2>To-Do: { toDo.title }</h2>
+  return loading ? <h3>Loading...</h3> : <h2>To-Do: {toDo.title}</h2>;
 }
 
- export default ToDo;
+export default ToDo;
