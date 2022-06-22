@@ -21,10 +21,11 @@ function UseRefExample1() {
       </Link>
 
       <h1 className='text-xl font-bold mb-2'>useRef Example 1</h1>
-      <h3 className='text-secondary'>
+      <h3 className='text-secondary mb-2'>
         Use <i>useRef()</i> to change elements. Try hitting the submit button.
-        Click the text <i>Hello from paragraph!</i>{' '}
+        Click the text <i>Hello from paragraph!</i>
       </h3>
+
       <form onSubmit={onSubmit}>
         <label htmlFor='name'>Name</label>
         <input
@@ -34,7 +35,7 @@ function UseRefExample1() {
           className='mb-2 form-control'
         />
         <br />
-        <button type='submit' className='btn btn-primary'>
+        <button type='submit' className='btn btn-secondary text-base-100'>
           Submit
         </button>
         <br />

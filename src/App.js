@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import UseStateExample from './components/UseStateExample';
+import UseReducerExample from './components/UseReducerExample';
 import UseRefExample1 from './components/UseRefExample1';
 import UseRefExample2 from './components/UseRefExample2';
 import UseRefExample3 from './components/UseRefExample3';
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/UseStateExample' element={<UseStateExample />} />
+          <Route path='/UseReducerExample' element={<UseReducerExample />} />
           <Route path='/UseRefExample1' element={<UseRefExample1 />} />
           <Route path='/UseRefExample2' element={<UseRefExample2 />} />
           <Route path='/UseRefExample3' element={<UseRefExample3 />} />

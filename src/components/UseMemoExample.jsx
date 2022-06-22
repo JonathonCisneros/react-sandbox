@@ -20,7 +20,7 @@ function UseMemoExample() {
   // just adds 1 to previous state
   const onClick = () => {
     setIncr((prevState) => {
-      console.log(prevState); // display previous state before 1 is added
+      console.log(incr); // display previous state before 1 is added
       return prevState + 1;
     });
   };
@@ -32,7 +32,7 @@ function UseMemoExample() {
       </Link>
 
       <h1 className='text-xl font-bold mb-2'>useMemo Example</h1>
-      <h3 className='text-secondary'>
+      <h3 className='text-secondary mb-4'>
         The <i>useMemo()</i> hook prevents expensive functions from running
         again when not necessary. In this example, when you type in or scroll
         through numbers, an expensive function runs (includes a for loop that
@@ -43,14 +43,14 @@ function UseMemoExample() {
       <p>Renders: {renders.current}</p>
       <input
         type='number'
-        className='form-control w-25'
+        className='form-control w-25 mb-2'
         value={number}
         onChange={(e) => setNumber(e.target.value)}
       />
-      <p>
+      <p className='mb-2'>
         The square root of {number} is {sqrt}.
       </p>
-      <button className='btn btn-primary' onClick={onClick}>
+      <button className='btn btn-secondary text-base-100' onClick={onClick}>
         Re-Render
       </button>
       <br />
