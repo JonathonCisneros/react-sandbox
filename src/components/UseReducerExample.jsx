@@ -29,7 +29,9 @@ function UseReducerExample() {
       <h1 className='text-xl font-bold mb-2'>useState Example</h1>
       <p className='mb-2 text-lg'>
         The <i>useReducer()</i> hook allows developers to change the value of
-        multiple states using custom state logic
+        multiple states using custom state logic. Here you can
+        increment/decrement the counter state and change the text state using
+        the <i>useReducer()</i> hook.
       </p>
 
       <p className='mb-2 text-md'>Count: {state.count}</p>
